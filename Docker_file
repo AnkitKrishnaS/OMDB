@@ -1,0 +1,8 @@
+# a simple for docker 
+FROM python:3.7
+
+ADD OMDBMovie.py /
+
+RUN pip install requests
+
+CMD [ "python", "./OMDBMovie.py" ]
